@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <style>
+            table{
+                background-color: bisque;
+            }
+            th, td{
+                border: 1px solid black;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body style="background-color:floralwhite;">
+
+        <h2 style="color:brown; text-align: center;">HTML Tables , Forms & Multimedia</h2>
+        <!-- Tables-->
+        <h3>Student Tables</h3>
+        <table name="studenttable">
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>class</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>20</td>
+                <td>10th</td>
+                <td>Maths</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mary</td>
+                <td>21</td>
+                <td>11th</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Peter</td>
+                <td>22</td>
+                <td>12th</td>
+                <td>English</td>
+            </tr>
+        </table>
+
+        <!--Forms-->
+
+        <h3>Student Form </h3>
+        <form action="studenttable.php" method="post">
+
+            <label for="Name">Name:  </label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for ="Age">Age:  </label>
+            <input type="number" max="18" min="12"><br><br>
+
+            <label for="class">Class:  </label>
+            <select name="class" id="class">
+                <option value="8">8th</option>
+                <option value="9">9th</option>
+                <option value="10">10th</option>
+                <option value="11">11th</option>
+                <option value="12">12th</option>
+            </select><br><br>
+
+            <label for="Subject">Subject:</label><br>
+
+            <input type="radio" id="maths" name="subject" value="maths" max="1" min="0">
+            <label for="Maths" id="maths" name="maths">Maths</label><br>
+
+            <input type="radio" id="science" name="subject" value="science">
+            <label for="Science" id="science" name="science">Science</label><br>
+
+            <input type="radio" id="english" name="subject" value="english">
+            <label for="English" id="english" name="english">English</label><br><br>
+
+            <button type="submit">Add Student</button>
+        </form>
+
+        <!-- Multimedia-->
+         <h3>Video</h3>
+         <video width="500" height="300" controls poster="https://plus.unsplash.com/premium_vector-1720979731604-5c872b919191?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <source src="video.mp4" type="video/mp4">
+            your browser does not support the video tag.
+         </video><br><br>
+
+         <h3>Audio</h3>
+         <audio controls >
+            <source src="audio.mp3" type="audio/mpeg">
+            your browser does not support the audio tag.
+         </audio>
+    </body>
+</html>
