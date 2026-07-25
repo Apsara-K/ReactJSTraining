@@ -1,0 +1,9 @@
+div h1 {
+    color: red;
+    background-color: pink;
+}
+
+div p {
+    color: rgb(249, 249, 249);
+    background-color: green;
+}

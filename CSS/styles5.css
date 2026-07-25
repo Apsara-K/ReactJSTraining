@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.box {
+    border: 2px solid black;
+    padding: 15px;
+    background-color: lightblue;
+}
+@media (min-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
