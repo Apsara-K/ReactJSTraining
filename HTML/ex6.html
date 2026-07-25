@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+    <body style="background-color:rgb(255, 251, 240)">
+        <h3 style="text-align: center;">Adding interactive JS event handlers for click/hover</h3>
+        <button id="clickButton">Click Me!</button>
+        <p id="clickMessage"></p>
+        <script>
+            document.getElementById("clickButton").addEventListener("click", function() {
+                document.getElementById("clickMessage").innerHTML = "Button clicked!";
+            });
+        </script>
+        <br><br>
+        <button id="hoverButton">Hover Over Me!</button>
+        <p id="hoverMessage"></p>
+        <script>
+            document.getElementById("hoverButton").addEventListener("mouseover", function() {
+                document.getElementById("hoverMessage").innerHTML = "Button hovered!";
+            });
+        </script>
+    </body>
+</html>
